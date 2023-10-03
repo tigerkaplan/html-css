@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form and Elements</title>
+  </head>
+
+  <body>
+    <form action="https://httpbin.org/post" method="POST">
+      <div>
+        <label for="Name">Name:</label>
+        <input name="Name" id="Name" type="text" required>
+      </div>
+
+      <div>
+        <label for="Phone">Phone:</label>
+        <input name="Name"  id="Phone" type="number" required>
+      </div>
+
+      <div>
+        <label for="Email">Email:</label>
+        <input name="Name"  id="Email" type="email" required>
+      </div>
+
+      <div>
+        <label for="Message">Message:</label>
+        <textarea id="Message" rows="3"></textarea>
+      </div>
+
+      <div>
+        <label for="City">City:</label>
+        <select id="City">
+          <option value="Brighton">Brighton</option>
+          <option value="London">London</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Favourite Colour:</label>
+        <input type="radio" name="Colour" value="Red">Red
+        <input type="radio" name="Colour" value="Green">Green
+      </div>
+
+      <div class="buttons">
+        <button type="reset">Clear</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
